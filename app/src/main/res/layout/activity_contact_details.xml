@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F2F1F1"
+    tools:context=".ContactDetails">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/back"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        app:cardBackgroundColor="@android:color/transparent"
+        app:cardCornerRadius="22dp"
+        app:cardElevation="0dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal|center_vertical"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="75dp"
+                android:src="@drawable/arrow_left_black"
+
+                />
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/detail_pic"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="38dp"
+        android:src="@drawable/ic_baseline_person_24"
+        android:elevation="4dp"
+        />
+
+    <TextView
+        android:id="@+id/detail_nama"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mark Lee"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/detail_pic"
+        android:elevation="20dp"
+        android:layout_marginTop="20dp"
+        android:textSize="28dp"
+        android:textStyle="bold"
+        />
+
+
+    <TextView
+        android:id="@+id/detail_telepon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="08129031010"
+        android:layout_below="@+id/detail_nama"
+        android:elevation="20dp"
+        android:textSize="26dp"
+        android:layout_marginTop="13dp"
+
+        />
+    <androidx.cardview.widget.CardView
+        android:id="@+id/back_kotak"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_below="@+id/back"
+        android:layout_marginTop="30dp"
+        app:cardBackgroundColor="@color/white"
+        >
+    </androidx.cardview.widget.CardView>
+
+    <Button
+        android:id="@+id/detail_edit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/back_kotak"
+        android:layout_marginHorizontal="100dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/login_btn"
+        android:text="Edit"
+        android:textSize="16dp"
+        android:textColor="@color/white"
+        android:backgroundTint="@color/white"
+        />
+
+    <Button
+        android:id="@+id/detail_hapus"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/detail_edit"
+        android:layout_marginHorizontal="100dp"
+        android:background="@drawable/login_btn"
+        android:text="Hapus"
+        android:textSize="16dp"
+        android:textColor="@color/white"
+        android:backgroundTint="@color/white"
+        />
+
+
+
+</RelativeLayout>

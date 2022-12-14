@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SyaratKetentuan">
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-4dp"
+        android:src="@drawable/top_view">
+
+    </ImageView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/btn_back8"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        app:cardBackgroundColor="@android:color/transparent"
+        app:cardCornerRadius="22dp"
+        app:cardElevation="0dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal|center_vertical"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="75dp"
+                android:src="@drawable/arrow_left" />
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:layout_marginLeft="40dp"
+        android:text="Syarat dan Ketentuan"
+        android:textColor="@color/white"
+        android:textSize="29dp" />
+
+    <TextView
+        android:id="@+id/textsk1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView3"
+        android:layout_marginTop="30dp"
+        android:layout_marginHorizontal="20dp"
+        android:text="Last Updated : Oktober 6, 2022"
+        android:textSize="18dp"
+        />
+
+    <TextView
+        android:id="@+id/textsk2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="25dp"
+        android:layout_below="@+id/textsk1"
+        android:text="MOHON UNTUK MEMBACA SELURUH SYARAT DAN
+KETENTUAN PENGGUNAAN SERTA KEBIJAKAN
+PRIVASI ALERT DENGAN CERMAT DAN SEKSAMA
+SEBELUM MENGGUNAKAN SETIAP FIRUT DAN/ATAU
+LAYANAN YANG TERSEDIA DALAM PLATFORM ALERT"
+        android:textSize="14dp"
+        />
+
+    <TextView
+        android:id="@+id/textsk3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="13dp"
+        android:layout_below="@id/textsk2"
+        android:textSize="14dp"
+        android:text="Syarat dan Ketentuan Penggunaan Alert
+(“Ketentuan Penggunaan”) ini merupakan suatu
+perjanjian sah terkait tata cara dan persyaratan
+penggunaan fitur dan/atau layanan (“Layanan”)
+Platform Alert (“Platform”) antara Pengguna (“Anda“)
+dengan pengelola Paltform, yaitu Alert (“Kami”).
+Dengan mengunduh dan/atau memasang dan/atau
+menggunakan Platform dan/atau menikmati Layanan
+Kami, memahami, mengetahui, menerima, dan
+menyetujui seluruh informasi, syarat-syarat, dan
+ketentuan-ketentuan pengunaan Paltform yang
+terdapat dalam Ketentuan Penggunaan ini.
+"
+        />
+
+    <TextView
+        android:id="@+id/textsk4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="13dp"
+        android:layout_below="@id/textsk3"
+        android:textSize="14dp"
+        android:text="Apabila Anda tidak setuju terhadap salah satu,
+sebagian, atau seluruh isi yang tertuang dalam
+Ketentuan Pengunaan ini, silahkan untuk menghapus
+Platform dalam perangkat elektronik Anda dan/atau
+tidak mengakses Platform dan/atau tidak
+menggunakan Layanan Kami. Mohon untuk dapat
+diperhatikan pula bahwa Ketentuan Penggunaan ini
+dapat diperbarui dari waktu ke waktu."/>
+</RelativeLayout>

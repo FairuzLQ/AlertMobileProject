@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="left"
+    android:background="@drawable/sos_bg"
+    tools:context=".SOS">
+
+    <ImageButton
+        android:id="@+id/btn_back1"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:background="@drawable/arrow_left">
+    </ImageButton>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:textStyle="bold"
+        android:text="Pencet tombol apabila kamu dalam bahaya!"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="22sp">
+    </TextView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:text="Tombol akan membuat gadget bersuara keras"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="12sp">
+    </TextView>
+
+    <ImageButton
+        android:onClick="BtnSOS_OnClick"
+        android:layout_width="195dp"
+        android:layout_height="195dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginRight="1dp"
+        android:layout_gravity="center"
+        android:background="@drawable/sos_btn">
+    </ImageButton>
+
+    <Button
+        android:id="@+id/btn_kpd"
+        android:layout_width="300dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="60dp"
+        android:layout_gravity="center"
+        android:text="KIRIM PESAN DARURAT"
+        android:textColor="#FFFFFF"
+        android:onClick="SendSMS"
+        android:background="@drawable/btn_mod2">
+    </Button>
+
+    <Button
+        android:layout_width="300dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center"
+        android:text="HUBUNGI POLISI"
+        android:textColor="#FFFFFF"
+        android:background="@drawable/btn_mod2"
+        android:onClick="BtnCall_onClick"
+        >
+    </Button>
+
+</LinearLayout>

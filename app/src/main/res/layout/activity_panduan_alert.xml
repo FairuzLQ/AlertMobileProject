@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PanduanAlert">
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-4dp"
+        android:src="@drawable/top_view">
+
+    </ImageView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/btn_back10"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        app:cardBackgroundColor="@android:color/transparent"
+        app:cardCornerRadius="22dp"
+        app:cardElevation="0dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal|center_vertical"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="75dp"
+                android:src="@drawable/arrow_left" />
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:layout_marginLeft="40dp"
+        android:text="Panduan Alert"
+        android:textColor="@color/white"
+        android:textSize="29dp" />
+
+    <TextView
+        android:id="@+id/text1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView3"
+        android:layout_marginTop="30dp"
+        android:layout_marginHorizontal="20dp"
+        android:text="Apa yang bisa dilakukan oleh aplikasi Alert?"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        />
+
+    <TextView
+        android:id="@+id/isi_text1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text1"
+        android:layout_marginTop="15dp"
+        android:layout_marginHorizontal="40dp"
+        android:textSize="15dp"
+        android:text="Aplikasi ini bisa membantu seseorang jika
+sedang keadaan darurat, selain dapat
+mengubungi panggilan darurat, aplikasi ini
+juga dilengkapi dengan data pengguna yang
+lengkap dengan riwayat penyakit pengguna"
+        />
+
+    <TextView
+        android:id="@+id/text2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/isi_text1"
+        android:layout_marginTop="27dp"
+        android:layout_marginHorizontal="20dp"
+        android:text="Apa fungsi tombol SOS pada aplikasi?"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        />
+
+    <TextView
+        android:id="@+id/isi_text2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text2"
+        android:layout_marginTop="15dp"
+        android:layout_marginHorizontal="40dp"
+        android:textSize="15dp"
+        android:text="Fungsinya untuk menarik orang-orang sekitar
+yang mendengar suara dari ditekannya
+tombol SOS
+"
+        />
+
+    <TextView
+        android:id="@+id/text3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/isi_text2"
+        android:layout_marginTop="27dp"
+        android:layout_marginHorizontal="20dp"
+        android:text="Apa saja yang ada pada emergency contact?"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        />
+
+    <TextView
+        android:id="@+id/isi_text3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text3"
+        android:layout_marginTop="15dp"
+        android:layout_marginHorizontal="40dp"
+        android:textSize="15dp"
+        android:text="Fungsinya untuk menyimpan nomor - nomor
+darurat yang sekiranya bisa dihubungi dalam
+keadaan tertentu.
+
+"
+        />
+
+    <TextView
+        android:id="@+id/text4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/isi_text3"
+        android:layout_marginTop="27dp"
+        android:layout_marginHorizontal="20dp"
+        android:text="Apa saja fungsi pada pertolongan pertama?"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        />
+
+    <TextView
+        android:id="@+id/isi_text4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text4"
+        android:layout_marginTop="15dp"
+        android:layout_marginHorizontal="40dp"
+        android:textSize="15dp"
+        android:text="Fungsinya untuk menyimpan data berupa
+penyakit yang biasanya dimiliki oleh beberapa
+orang, agar lebih mudah dalam melakukan
+pertolongan pertama pada penyakit tersebut.
+
+
+"
+        />
+
+
+
+</RelativeLayout>

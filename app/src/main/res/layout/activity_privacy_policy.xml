@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PrivacyPolicy">
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-4dp"
+        android:src="@drawable/top_view">
+
+    </ImageView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/btn_back9"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        app:cardBackgroundColor="@android:color/transparent"
+        app:cardCornerRadius="22dp"
+        app:cardElevation="0dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal|center_vertical"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="75dp"
+                android:src="@drawable/arrow_left" />
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:layout_marginLeft="40dp"
+        android:text="Alert Privacy Policy"
+        android:textColor="@color/white"
+        android:textSize="29dp" />
+
+    <TextView
+        android:id="@+id/textpp1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView3"
+        android:layout_marginTop="30dp"
+        android:layout_marginHorizontal="20dp"
+        android:text="Last Updated : Oktober 6, 2022"
+        android:textSize="18dp"
+        />
+
+    <TextView
+        android:id="@+id/textpp2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="23dp"
+        android:text="Data medis yang Anda simpan dalam aplikasi tidak
+akan dibagikan  kepada pihak ketiga."
+        android:layout_marginHorizontal="20dp"
+        android:textSize="16dp"
+        android:layout_below="@id/textpp1"
+        android:textStyle="bold"
+
+        />
+    <TextView
+        android:id="@+id/textpp3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginHorizontal="20dp"
+        android:layout_below="@id/textpp2"
+        android:text="Aplikasi mungkin memerlukan izin untuk mengakses
+kontak  Anda, mendapatkan lokasi Anda, dan
+melakukan panggilan telepon. Izin diminta untuk
+mengaktifkan fitur aplikasi berikut :"
+        android:textSize="16dp"
+
+        />
+
+    <TextView
+        android:id="@+id/textpp4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textpp3"
+        android:layout_marginTop="13dp"
+        android:layout_marginHorizontal="30dp"
+        android:text="- Mengakses kontak Anda"
+        android:textSize="16dp"
+        />
+
+    <TextView
+        android:id="@+id/textpp5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textpp4"
+        android:layout_marginTop="13dp"
+        android:layout_marginHorizontal="30dp"
+        android:text="- Melakukan panggilan telepon memungkinkan panggilan cepat dari layar kunci Anda"
+        android:textSize="16dp"
+        />
+
+    <TextView
+        android:id="@+id/textpp6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textpp5"
+        android:layout_marginTop="13dp"
+        android:layout_marginHorizontal="30dp"
+        android:text="- Melakukan permintaan untuk mendapatkan lokasi Anda  dan sertakan perkiraan lokasi dan alamat GPS Anda "
+        android:textSize="16dp"
+        />
+
+    <TextView
+        android:id="@+id/textpp7"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textpp6"
+        android:layout_marginTop="13dp"
+        android:layout_marginHorizontal="20dp"
+        android:text="Kami berhak untuk melakukan perubahan terhadap kebijakan privasi ini kapanpun dengan memberikan pemberitahuan pada halaman ini. Disarankan untuk sering memeriksa halaman ini, mengacu pada tanggal modifikasi yang tertera di bagian atas. Jika Anda memiliki pertanyaan, Anda dapat menghubungi :
+
+"
+        android:textSize="16dp"
+        />
+
+    <TextView
+        android:id="@+id/textpp8"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textpp7"
+        android:layout_marginTop="20dp"
+        android:layout_marginHorizontal="20dp"
+        android:text="Alert@medical_.app."
+        android:textColor="@color/sky_blue"
+
+        android:textSize="16dp"
+        />
+
+</RelativeLayout>

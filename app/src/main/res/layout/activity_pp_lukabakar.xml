@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PP_lukabakar">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-4dp"
+            android:src="@drawable/top_view">
+
+        </ImageView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/btn_back17"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="20dp"
+            app:cardBackgroundColor="@android:color/transparent"
+            app:cardCornerRadius="22dp"
+            app:cardElevation="0dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="75dp"
+                    android:src="@drawable/arrow_left" />
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="80dp"
+            android:layout_marginLeft="40dp"
+            android:text="Luka Bakar"
+            android:textColor="@color/white"
+            android:textSize="29dp" />
+
+        <TextView
+            android:id="@+id/nomor_1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="1."
+            android:layout_below="@+id/textView3"
+            android:layout_marginHorizontal="30dp"
+            android:layout_marginTop="25dp"
+            android:textSize="18dp"
+            android:textColor="@color/light_black"/>
+
+        <TextView
+            android:id="@+id/langkah_1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Dinginkan bagian yang terbakar dengan air dingin yang mengalir minimal 10 menit."
+            android:justificationMode="inter_word"
+            android:layout_below="@+id/textView3"
+            android:layout_alignLeft="@+id/nomor_1"
+            android:layout_marginHorizontal="30dp"
+            android:layout_marginTop="25dp"
+            android:textSize="18dp"
+            android:textColor="@color/light_black"/>
+
+        <TextView
+            android:id="@+id/nomor_2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="2."
+            android:layout_below="@+id/langkah_1"
+            android:layout_marginHorizontal="30dp"
+            android:layout_marginTop="20dp"
+            android:textSize="18dp"
+            android:textColor="@color/light_black"/>
+
+        <TextView
+            android:id="@+id/langkah_2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Jika luka bakar membutuhkan perawatan medis lanjutan, balut luka secara longgar dengan menggunakan plastik bersih seperti penutup makanan atau kantong plastik biasa."
+            android:justificationMode="inter_word"
+            android:layout_below="@+id/langkah_1"
+            android:layout_alignLeft="@+id/nomor_2"
+            android:layout_marginHorizontal="30dp"
+            android:layout_marginTop="20dp"
+            android:textSize="18dp"
+            android:textColor="@color/light_black"/>
+
+        <TextView
+            android:id="@+id/nomor_3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="3."
+            android:layout_below="@+id/langkah_2"
+            android:layout_marginHorizontal="30dp"
+            android:layout_marginTop="20dp"
+            android:textSize="18dp"
+            android:textColor="@color/light_black"/>
+
+        <TextView
+            android:id="@+id/langkah_3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Jika perlu, hubungi dan atau bawa penderita ke fasilitas kesehatan terdekat untuk mendapatkan pertolongan lanjutan."
+            android:justificationMode="inter_word"
+            android:layout_below="@+id/langkah_2"
+            android:layout_alignLeft="@+id/nomor_3"
+            android:layout_marginHorizontal="30dp"
+            android:layout_marginTop="20dp"
+            android:textSize="18dp"
+            android:textColor="@color/light_black"/>
+
+        <TextView
+            android:id="@+id/tanya_jawab"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Tanya Jawab"
+            android:layout_below="@+id/langkah_3"
+            android:layout_marginHorizontal="30dp"
+            android:layout_marginTop="20dp"
+            android:textStyle="bold"
+            android:textSize="16dp"
+            android:textColor="@color/light_black"
+            />
+
+        <ExpandableListView
+            android:id="@+id/dropdown_pp_lukabakar"
+            android:layout_width="match_parent"
+            android:layout_height="900dp"
+            android:layout_below="@id/tanya_jawab"
+            />
+
+        <TextView
+            android:id="@+id/back_pp_lukabakar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Lihat Penanganan Penyakit lain..."
+            android:layout_below="@id/dropdown_pp_lukabakar"
+            android:layout_marginBottom="15dp"
+            android:layout_marginHorizontal="30dp"
+            android:textSize="18dp"
+            android:textColor="@color/sky_blue"
+            android:textStyle="italic"
+            android:clickable="true"
+            android:onClick="onClick"/>
+    </RelativeLayout>
+</ScrollView>

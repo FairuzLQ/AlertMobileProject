@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F2F1F1"
+    tools:context=".InputKontak">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/btn_back12"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        app:cardBackgroundColor="@android:color/transparent"
+        app:cardCornerRadius="22dp"
+        app:cardElevation="0dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_horizontal|center_vertical"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="75dp"
+            android:src="@drawable/arrow_left_black"
+
+            />
+
+    </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/text_inputCon"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/btn_back12"
+        android:text="Input Kontak"
+        android:layout_marginTop="25dp"
+        android:textColor="#676666"
+        android:textSize="28dp"
+        android:layout_marginRight="80dp"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/input_pic"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/text_inputCon"
+        android:layout_marginTop="28dp"
+        android:background="@drawable/ic_baseline_person_24"/>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/nama_kontak"
+        app:cardCornerRadius="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/input_pic">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageView
+                android:id="@+id/input_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/profil_profil_saya"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="20dp"
+                android:layout_centerVertical="true"
+                />
+            <EditText
+                android:id="@+id/nama_edit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="Nama"
+                android:textColorHint="#CBC6C6"
+                android:layout_toRightOf="@id/input_icon"
+                android:layout_marginLeft="23dp"
+                android:inputType="textPersonName"
+                android:maxLines="1"
+
+                />
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/telepon_kontak"
+        app:cardCornerRadius="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/nama_kontak">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageView
+                android:id="@+id/input2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/phone_input"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="12dp"
+                android:layout_centerVertical="true"
+                />
+            <EditText
+                android:id="@+id/telepon_edit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="Telepon"
+                android:textColorHint="#CBC6C6"
+                android:layout_toRightOf="@id/input2"
+                android:layout_marginLeft="15dp"
+                android:inputType="phone"
+                android:maxLines="1"
+
+                />
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+
+    <Button
+        android:id="@+id/simpan_kontak"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#F2F1F1"
+        android:textSize="24dp"
+        android:textStyle="bold"
+        android:textColor="#585757"
+        android:text="Simpan"
+        />
+
+
+
+</RelativeLayout>

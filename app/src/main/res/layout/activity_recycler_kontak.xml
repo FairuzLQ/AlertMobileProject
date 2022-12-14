@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.apachat.swipereveallayout.core.SwipeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/parentLayout"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    app:dragEdge="right"
+    app:mode="same_level">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        >
+        <TextView
+            android:id="@+id/contact_edit"
+            android:layout_width="@dimen/_70sdp"
+            android:layout_height="match_parent"
+            android:text="Edit"
+            android:gravity="center"
+            android:background="#417DE4"
+            android:textSize="@dimen/_18sdp"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            />
+        <TextView
+            android:id="@+id/contact_delete"
+            android:layout_width="@dimen/_70sdp"
+            android:layout_height="match_parent"
+            android:text="Delete"
+            android:gravity="center"
+            android:background="#CA2437"
+            android:textSize="@dimen/_18sdp"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            />
+    </LinearLayout>
+    <RelativeLayout
+        android:id="@+id/mainLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/output_pic_kontak"
+            android:layout_width="@dimen/_50sdp"
+            android:layout_height="@dimen/_50sdp"
+            android:src="@drawable/ic_baseline_person_24"
+            android:padding="@dimen/_5sdp"
+            />
+
+        <TextView
+            android:id="@+id/output_nama_kontak"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Nama Kontak"
+            android:textColor="@color/black"
+            android:layout_marginStart="@dimen/_5sdp"
+            android:layout_toStartOf="@+id/geser_kiri"
+            android:layout_toEndOf="@+id/output_pic_kontak"
+            android:layout_centerInParent="true"
+            android:textSize="@dimen/_16sdp"
+            />
+        <ImageView
+            android:id="@+id/geser_kiri"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/arrow_left_black"
+            android:layout_alignParentEnd="true"
+            android:layout_centerInParent="true"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:contentDescription="TODO" />
+    </RelativeLayout>
+
+
+</com.apachat.swipereveallayout.core.SwipeLayout>

@@ -1,0 +1,387 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RiwayatPanggilan"
+    android:background="@color/white">
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-4dp"
+        android:src="@drawable/top_view">
+    </ImageView>
+
+    <ImageButton
+        android:id="@+id/btn_back4"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:background="@drawable/arrow_left">
+    </ImageButton>
+
+    <TextView
+        android:id="@+id/title_riwayatpanggilan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:layout_marginLeft="20dp"
+        android:layout_below="@+id/btn_back4"
+        android:text="Riwayat Panggilan"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textSize="29dp" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/panggilan1"
+        app:cardBackgroundColor="@android:color/transparent"
+        app:cardElevation="0dp"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginTop="34dp"
+        android:layout_below="@+id/title_riwayatpanggilan">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/icon_panggilan1"
+                android:layout_width="49dp"
+                android:layout_height="49dp"
+                android:layout_centerVertical="true"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="10dp"
+                android:src="@drawable/ic_baseline_person_24"
+                />
+
+            <TextView
+                android:id="@+id/rp_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Unknown 1"
+                android:textSize="15dp"
+                android:textColor="@color/black"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="9dp"
+                android:textStyle="bold"
+                android:layout_toRightOf="@+id/icon_panggilan1"
+                />
+
+            <TextView
+                android:id="@+id/rpn_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="(3) Today, 9:00 AM"
+                android:textSize="10dp"
+                android:textColor="@color/black"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="40dp"
+                android:layout_toRightOf="@+id/icon_panggilan1"
+                />
+
+            <ImageView
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_centerVertical="true"
+                android:src="@drawable/icon_riwayat_panggilan"
+                android:layout_marginRight="10dp"
+                android:layout_alignParentRight="true"
+                />
+
+            <View
+                android:layout_width="300dp"
+                android:layout_height="1dp"
+                android:layout_marginLeft="25dp"
+                android:layout_toRightOf="@+id/icon_panggilan1"
+                android:layout_alignParentBottom="true"
+                android:background="@android:color/darker_gray" />
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/panggilan2"
+        app:cardBackgroundColor="@android:color/transparent"
+        app:cardElevation="0dp"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginTop="2dp"
+        android:layout_below="@+id/panggilan1">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/icon_panggilan2"
+                android:layout_width="49dp"
+                android:layout_height="49dp"
+                android:layout_centerVertical="true"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="10dp"
+                android:src="@drawable/ic_baseline_person_24"
+                />
+
+            <TextView
+                android:id="@+id/rp_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Unknown 2"
+                android:textSize="15dp"
+                android:textColor="@color/black"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="9dp"
+                android:textStyle="bold"
+                android:layout_toRightOf="@+id/icon_panggilan2"
+                />
+
+            <TextView
+                android:id="@+id/rpn_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="(2) Today, 9:15 AM"
+                android:textSize="10dp"
+                android:textColor="@color/black"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="40dp"
+                android:layout_toRightOf="@+id/icon_panggilan2"
+                />
+
+            <ImageView
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_centerVertical="true"
+                android:src="@drawable/icon_riwayat_panggilan"
+                android:layout_marginRight="10dp"
+                android:layout_alignParentRight="true"
+                />
+
+            <View
+                android:layout_width="300dp"
+                android:layout_height="1dp"
+                android:layout_marginLeft="25dp"
+                android:layout_toRightOf="@+id/icon_panggilan2"
+                android:layout_alignParentBottom="true"
+                android:background="@android:color/darker_gray" />
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/panggilan3"
+        app:cardBackgroundColor="@android:color/transparent"
+        app:cardElevation="0dp"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginTop="2dp"
+        android:layout_below="@+id/panggilan2">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/icon_panggilan3"
+                android:layout_width="49dp"
+                android:layout_height="49dp"
+                android:layout_centerVertical="true"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="10dp"
+                android:src="@drawable/ic_baseline_person_24"
+                />
+
+            <TextView
+                android:id="@+id/rp_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Unknown 3"
+                android:textSize="15dp"
+                android:textColor="@color/black"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="9dp"
+                android:textStyle="bold"
+                android:layout_toRightOf="@+id/icon_panggilan3"
+                />
+
+            <TextView
+                android:id="@+id/rpn_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="25 minutes ago"
+                android:textSize="10dp"
+                android:textColor="@color/black"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="40dp"
+                android:layout_toRightOf="@+id/icon_panggilan3"
+                />
+
+            <ImageView
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_centerVertical="true"
+                android:src="@drawable/icon_riwayat_panggilan"
+                android:layout_marginRight="10dp"
+                android:layout_alignParentRight="true"
+                />
+
+            <View
+                android:layout_width="300dp"
+                android:layout_height="1dp"
+                android:layout_marginLeft="25dp"
+                android:layout_toRightOf="@+id/icon_panggilan3"
+                android:layout_alignParentBottom="true"
+                android:background="@android:color/darker_gray" />
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/panggilan4"
+        app:cardBackgroundColor="@android:color/transparent"
+        app:cardElevation="0dp"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginTop="2dp"
+        android:layout_below="@+id/panggilan3">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/icon_panggilan4"
+                android:layout_width="49dp"
+                android:layout_height="49dp"
+                android:layout_centerVertical="true"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="10dp"
+                android:src="@drawable/ic_baseline_person_24"
+                />
+
+            <TextView
+                android:id="@+id/rp_4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Unknown 4"
+                android:textSize="15dp"
+                android:textColor="@color/black"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="9dp"
+                android:textStyle="bold"
+                android:layout_toRightOf="@+id/icon_panggilan4"
+                />
+
+            <TextView
+                android:id="@+id/rpn_4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="27 minutes ago"
+                android:textSize="10dp"
+                android:textColor="@color/black"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="40dp"
+                android:layout_toRightOf="@+id/icon_panggilan4"
+                />
+
+            <ImageView
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_centerVertical="true"
+                android:src="@drawable/icon_riwayat_panggilan"
+                android:layout_marginRight="10dp"
+                android:layout_alignParentRight="true"
+                />
+
+            <View
+                android:layout_width="300dp"
+                android:layout_height="1dp"
+                android:layout_marginLeft="25dp"
+                android:layout_toRightOf="@+id/icon_panggilan4"
+                android:layout_alignParentBottom="true"
+                android:background="@android:color/darker_gray" />
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/panggilan5"
+        app:cardBackgroundColor="@android:color/transparent"
+        app:cardElevation="0dp"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginTop="2dp"
+        android:layout_below="@+id/panggilan4">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/icon_panggilan5"
+                android:layout_width="49dp"
+                android:layout_height="49dp"
+                android:layout_centerVertical="true"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="10dp"
+                android:src="@drawable/ic_baseline_person_24"
+                />
+
+            <TextView
+                android:id="@+id/rp_5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Unknown 5"
+                android:textSize="15dp"
+                android:textColor="@color/black"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="9dp"
+                android:textStyle="bold"
+                android:layout_toRightOf="@+id/icon_panggilan5"
+                />
+
+            <TextView
+                android:id="@+id/rpn_5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="30 minutes ago"
+                android:textSize="10dp"
+                android:textColor="@color/black"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="40dp"
+                android:layout_toRightOf="@+id/icon_panggilan5"
+                />
+
+            <ImageView
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_centerVertical="true"
+                android:src="@drawable/icon_riwayat_panggilan"
+                android:layout_marginRight="10dp"
+                android:layout_alignParentRight="true"
+                />
+
+            <View
+                android:layout_width="300dp"
+                android:layout_height="1dp"
+                android:layout_marginLeft="25dp"
+                android:layout_toRightOf="@+id/icon_panggilan5"
+                android:layout_alignParentBottom="true"
+                android:background="@android:color/darker_gray" />
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+
+
+</RelativeLayout>
