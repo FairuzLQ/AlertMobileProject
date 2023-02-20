@@ -2,6 +2,7 @@ package com.example.alertmobileproject;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.app.AppCompatDelegate;
 import androidx.cardview.widget.CardView;
 import android.content.Intent;
 import android.os.Bundle;
@@ -30,6 +31,7 @@ public class Profil extends AppCompatActivity implements View.OnClickListener {
 
         db = new DBHelper(this);
         getSupportActionBar().hide();
+        AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO);
         profile1 = (CardView) findViewById(R.id.profil_saya);
         profile2 = (CardView) findViewById(R.id.riwayat_panggilan);
         profile3 = (CardView) findViewById(R.id.riwayat_penyakit);

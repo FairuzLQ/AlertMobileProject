@@ -2,6 +2,7 @@ package com.example.alertmobileproject;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.app.AppCompatDelegate;
 import androidx.core.app.ActivityCompat;
 import androidx.core.content.ContextCompat;
 
@@ -46,6 +47,7 @@ public class Eksplor extends AppCompatActivity implements OnMapReadyCallback {
         Toast.makeText(this, "Google Maps tersedia", Toast.LENGTH_SHORT).show();
         mMap = googleMap;
         getSupportActionBar().hide();
+        AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO);
         if (mLocationPermissionsGranted) {
             getDeviceLocation();
 

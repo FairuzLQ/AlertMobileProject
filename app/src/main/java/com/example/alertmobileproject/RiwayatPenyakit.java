@@ -1,6 +1,7 @@
 package com.example.alertmobileproject;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.app.AppCompatDelegate;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -23,6 +24,7 @@ public class RiwayatPenyakit extends AppCompatActivity {
 
         db = new DBHelper(this);
         getSupportActionBar().hide();
+        AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO);
 
         btnBack = findViewById(R.id.btn_back5);
         btnSimpan = findViewById(R.id.btn_simpan2);

@@ -9,6 +9,7 @@ import android.view.View;
 import android.widget.ImageButton;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.app.AppCompatDelegate;
 import androidx.core.app.ActivityCompat;
 
 public class NomorDarurat extends AppCompatActivity implements View.OnClickListener  {
@@ -24,6 +25,7 @@ public class NomorDarurat extends AppCompatActivity implements View.OnClickListe
         db = new DBHelper(this);
 
         getSupportActionBar().hide();
+        AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO);
 
         btnBack = findViewById(R.id.btn_back2);
         /*btn112 = (CardView) findViewById(R.id.btn_112);

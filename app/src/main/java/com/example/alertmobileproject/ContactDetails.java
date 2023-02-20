@@ -1,6 +1,7 @@
 package com.example.alertmobileproject;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.app.AppCompatDelegate;
 
 import android.content.Intent;
 import android.database.Cursor;
@@ -22,7 +23,7 @@ public class ContactDetails extends AppCompatActivity {
         setContentView(R.layout.activity_contact_details);
 
         dbHelper = new DBHelper(this);
-
+        AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO);
         //ambil data dari intent kontak adapter
         Intent intent = getIntent();
         id = intent.getStringExtra("contactId");

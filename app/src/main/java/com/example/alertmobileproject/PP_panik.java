@@ -1,6 +1,7 @@
 package com.example.alertmobileproject;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.app.AppCompatDelegate;
 import androidx.cardview.widget.CardView;
 import android.content.Intent;
 import android.os.Bundle;
@@ -20,6 +21,7 @@ public class PP_panik extends AppCompatActivity implements View.OnClickListener 
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_pp_panik);
         getSupportActionBar().hide();
+        AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO);
         back = (CardView) findViewById(R.id.btn_back19);
         back.setOnClickListener(this);
 

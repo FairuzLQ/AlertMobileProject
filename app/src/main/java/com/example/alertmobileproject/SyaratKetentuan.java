@@ -1,6 +1,7 @@
 package com.example.alertmobileproject;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.app.AppCompatDelegate;
 import androidx.cardview.widget.CardView;
 
 import android.content.Intent;
@@ -17,6 +18,7 @@ public class SyaratKetentuan extends AppCompatActivity implements View.OnClickLi
         setContentView(R.layout.activity_syarat_ketentuan);
         btnBack = findViewById(R.id.btn_back8);
         getSupportActionBar().hide();
+        AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO);
         btnBack.setOnClickListener(this);
     }
 

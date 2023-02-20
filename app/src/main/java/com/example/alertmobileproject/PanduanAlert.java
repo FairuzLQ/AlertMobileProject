@@ -1,6 +1,7 @@
 package com.example.alertmobileproject;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.app.AppCompatDelegate;
 import androidx.cardview.widget.CardView;
 
 import android.content.Intent;
@@ -18,6 +19,7 @@ public class PanduanAlert extends AppCompatActivity implements View.OnClickListe
         btnBack = findViewById(R.id.btn_back10);
 
         getSupportActionBar().hide();
+        AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO);
 
         btnBack.setOnClickListener(this);
     }

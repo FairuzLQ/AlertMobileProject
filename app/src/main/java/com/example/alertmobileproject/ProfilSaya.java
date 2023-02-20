@@ -1,6 +1,8 @@
 package com.example.alertmobileproject;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.app.AppCompatDelegate;
+
 import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
@@ -25,6 +27,7 @@ public class ProfilSaya extends AppCompatActivity {
         db = new DBHelper(this);
 
         getSupportActionBar().hide();
+        AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO);
 
         btnSimpan = (Button) findViewById(R.id.btn_simpan1);
         btnBack = findViewById(R.id.btn_back3);

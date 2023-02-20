@@ -1,6 +1,8 @@
 package com.example.alertmobileproject;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.app.AppCompatDelegate;
+
 import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
@@ -22,6 +24,7 @@ public class RiwayatPanggilan extends AppCompatActivity implements View.OnClickL
         db = new DBHelper(this);
 
         getSupportActionBar().hide();
+        AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO);
         btnBack = findViewById(R.id.btn_back4);
         no1 = findViewById(R.id.rp_1);
         no2 = findViewById(R.id.rp_2);

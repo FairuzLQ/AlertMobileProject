@@ -1,6 +1,7 @@
 package com.example.alertmobileproject;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.app.AppCompatDelegate;
 import androidx.cardview.widget.CardView;
 import android.content.Intent;
 import android.os.Bundle;
@@ -20,6 +21,7 @@ public class PP_seranganjantung extends AppCompatActivity implements View.OnClic
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_pp_seranganjantung);
         getSupportActionBar().hide();
+        AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO);
         back = (CardView) findViewById(R.id.btn_back20);
         back.setOnClickListener(this);
 

@@ -1,6 +1,7 @@
 package com.example.alertmobileproject;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.app.AppCompatDelegate;
 import androidx.cardview.widget.CardView;
 import android.content.Intent;
 import android.os.Bundle;
@@ -21,6 +22,7 @@ public class PP_alergi extends AppCompatActivity implements View.OnClickListener
         setContentView(R.layout.activity_pp_alergi);
 
         getSupportActionBar().hide();
+        AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO);
 
         back = (CardView) findViewById(R.id.btn_back13);
         back.setOnClickListener(this);

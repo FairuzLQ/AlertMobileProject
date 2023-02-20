@@ -1,6 +1,8 @@
 package com.example.alertmobileproject;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.app.AppCompatDelegate;
+
 import android.content.Intent;
 import android.os.Bundle;
 import android.telephony.SmsManager;
@@ -22,6 +24,7 @@ public class ProfilSayaShow extends AppCompatActivity {
         setContentView(R.layout.activity_profil_saya_show);
         db = new DBHelper(this);
         getSupportActionBar().hide();
+        AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO);
 
         btnSimpanShow = findViewById(R.id.btn_simpan2);
         btnBackShow = findViewById(R.id.btn_back20);

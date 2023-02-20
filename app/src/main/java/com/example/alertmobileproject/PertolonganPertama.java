@@ -1,5 +1,6 @@
 package com.example.alertmobileproject;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.app.AppCompatDelegate;
 import androidx.cardview.widget.CardView;
 import android.os.Bundle;
 import android.widget.AdapterView;
@@ -20,6 +21,7 @@ public class PertolonganPertama extends AppCompatActivity implements View.OnClic
         setContentView(R.layout.activity_pertolongan_pertama);
 
         getSupportActionBar().hide();
+        AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO);
 
         //Array untuk menyimpan penyakit2
         String[] arrPenyakit = {
